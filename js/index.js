@@ -45,7 +45,7 @@ function trackScrollPosition() {
     window.location.href.split("/")[window.location.href.split("/").length - 1];
 
   if (site == "index.html") {
-    if (scrollPosition > 650) {
+    if (scrollPosition > 500) {
       window.history.replaceState("index.html", "Index", "index.html#meny");
       replaceNavbarClasses("navbarLogo", "navbarMenu");
     }
@@ -59,7 +59,7 @@ function trackScrollPosition() {
       replaceNavbarClasses("navbarFindUs", "navbarContactUs");
     }
   } else if (site == "index.html#meny") {
-    if (scrollPosition < 650) {
+    if (scrollPosition < 500) {
       window.history.replaceState("index.html#meny", "Index", "index.html");
       replaceNavbarClasses("navbarMenu", "navbarLogo");
     }
@@ -77,10 +77,8 @@ function trackScrollPosition() {
 
 //tar in två navbar-element, och sedan tar den bort classen "active" från den första och lägger till på den andra
 function replaceNavbarClasses(currentActive, targetId) {
-  if (document.getElementById(currentActive).classList.contains("active")) {
-    document.getElementById(currentActive).classList.remove("active");
-    document.getElementById(targetId).classList.add("active");
-  }
+  document.getElementById(currentActive).classList.remove("active");
+  document.getElementById(targetId).classList.add("active");
 }
 
 //Denna funktion öppnar menyn i HTML. Den gör det genom att ändra "width"
@@ -100,8 +98,7 @@ if (window.location.href.includes("index")) {
   document.getElementsByClassName("gallery")[0].style.backgroundImage =
     "url(" + images[currentImageIndex] + ")";
   // Byt bild varje 5 sekunder
-  document.addEventListener(
-    "DOMContentLoaded",
-    setInterval(changeBackgroundImage, 5000)
-  );
+  document.addEventListener("DOMContentLoaded", () => {
+    setInterval(changeBackgroundImage, 5000);
+  });
 }
