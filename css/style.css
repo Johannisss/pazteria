@@ -134,7 +134,7 @@ h2 {
 }
 
 #contactInfo a {
-  color: #0000EE ;
+  color: #0000ee;
 }
 
 h6 {
@@ -145,7 +145,6 @@ h6 {
 
 footer {
   display: flex;
-  height: 250px;
   width: 100%;
   background-color: #f4dcd2;
   justify-content: space-evenly;
@@ -264,7 +263,7 @@ footer ul {
 
 #ourHistoryContainer p {
   color: black;
-  font-size: 13px;
+  font-size: 16px;
   font-family: "Italiana";
   font-weight: bold;
   padding: 25px;
@@ -298,6 +297,13 @@ footer ul {
     text-align: center;
     font-size: 14px;
   }
+  footer h6 {
+    padding: 10px 0;
+    width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: 14px;
+  }
   .gmap_canvas {
     height: 350px;
     width: 400px;
@@ -305,16 +311,5 @@ footer ul {
   #gmap_canvas {
     height: 350px;
     width: 400px;
-  }
-}
-
-@media (max-width: 800px) {
-  footer{
-    height: 700px;
-  }
-
-  footer ul {
-    width: 100%;
-    text-align: center;
   }
 }
