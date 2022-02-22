@@ -46,10 +46,24 @@
         <li id="navbarContactUs">
           <a href="hittaHit.html#contactUs">Kontakta Oss</a>
         </li>
+        <li class="material-icons menu" onclick="openMeny()">menu</li>
       </ul>
 
       <!--Klassen active indikerar var användaren befinner sig-->
     </nav>
+
+    <div id="mobil-meny" class="overlay">
+      <span class="material-icons close" onclick="closeMeny()"> close </span>
+      <div class="overlay-content">
+        <a href="index.html">Hem</a>
+        <a href="index.html#meny">Meny</a>
+        <a href="omOss.html">Om oss</a>
+        <a href="hittaHit.html">Hitta hit</a>
+        <a href="hittaHit.html#contactUs">Kontakta Oss</a>
+        <div class="easter-egg1"></div>
+      </div>
+    </div>
+
     <div class="container">
       <div id="ourHistoryContainer">
         <h1 id="history">Vår historia</h1>
