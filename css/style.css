@@ -163,6 +163,7 @@ footer {
   width: 100%;
   background-color: #f4dcd2;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 footer ul {
@@ -299,6 +300,15 @@ footer ul {
 
   h1 {
     font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  footer p {
+    padding: 10px 0;
+    width: 100%;
+    flex: 0 0 100%;
+    text-align: center;
   }
   .gmap_canvas {
     height: 350px;
