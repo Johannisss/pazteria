@@ -313,3 +313,14 @@ footer ul {
     width: 400px;
   }
 }
+
+@media (max-width: 800px) {
+  footer {
+    height: 400px;
+  }
+
+  footer ul {
+    width: 100%;
+    text-align: center;
+  }
+}
