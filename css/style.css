@@ -74,26 +74,6 @@ h2 {
   border-radius: 30px;
 }
 
-/* omOss.html */
-#ourHistoryContainer {
-  color: #ff0035;
-  background-color: rgba(171, 196, 189, 0.5);
-  margin: 50px 0px;
-}
-
-#history {
-  padding: 30px 0px;
-  text-align: center;
-}
-
-#ourHistoryContainer p {
-  color: black;
-  font-size: 18px;
-  font-family: "Italiana";
-  font-weight: bold;
-  padding: 25px;
-}
-
 /* hittaHit.html */
 p {
   font-size: 18px;
@@ -153,6 +133,7 @@ footer {
   background-color: #f4dcd2;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-top: 10px;
 }
 
 footer ul {
@@ -266,7 +247,7 @@ footer ul {
 
 #ourHistoryContainer p {
   color: black;
-  font-size: 18px;
+  font-size: 13px;
   font-family: "Italiana";
   font-weight: bold;
   padding: 25px;
@@ -293,11 +274,12 @@ footer ul {
   h2 {
     font-size: 25px;
   }
-  footer p {
+  footer ul {
     padding: 10px 0;
     width: 100%;
     flex: 0 0 100%;
     text-align: center;
+    font-size: 14px;
   }
   .gmap_canvas {
     height: 350px;
