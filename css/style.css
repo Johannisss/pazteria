@@ -155,7 +155,10 @@ footer {
   flex-wrap: wrap;
 }
 
-footer p {
+footer ul {
+  font-size: 18px;
+  list-style: none;
+  font-family: "Italiana";
   padding: 30px;
   color: black;
 }
