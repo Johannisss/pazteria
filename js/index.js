@@ -32,8 +32,20 @@ function changeBackgroundImage() {
 
     // Ta bort transparent klassen för att göra bilden synlig
     gallery.className = "gallery";
+<<<<<<< HEAD
   }, 1000);
 }
+=======
+
+    }, 1000)
+
+ };
+
+// Lägg till den första bilden som kommer synas direkt när man kommer in på sidan
+
+document.getElementsByClassName('gallery')[0].style.backgroundImage = "url("+ images[currentImageIndex] +")";
+
+>>>>>>> 186234dfafea3fef340c7ca770c7ebda85724fa1
 
 // Håller koll på när användaren scrollar, och kör trackScrollPosition när det scrollas
 window.addEventListener("scroll", trackScrollPosition);
@@ -45,8 +57,13 @@ function trackScrollPosition() {
     window.location.href.split("/")[window.location.href.split("/").length - 1];
 
   if (site == "index.html") {
+<<<<<<< HEAD
     if (scrollPosition > 400) {
       window.history.replaceState("index.html", "Index", "index.html#meny");
+=======
+    if (scrollPosition > 650) {
+      window.history.replaceState('index.html', 'Index', 'index.html#meny');
+>>>>>>> 186234dfafea3fef340c7ca770c7ebda85724fa1
       replaceNavbarClasses("navbarLogo", "navbarMenu");
     }
   } else if (site == "hittaHit.html") {
@@ -59,11 +76,12 @@ function trackScrollPosition() {
       replaceNavbarClasses("navbarFindUs", "navbarContactUs");
     }
   } else if (site == "index.html#meny") {
-    if (scrollPosition < 400) {
-      window.history.replaceState("index.html#meny", "Index", "index.html");
-      replaceNavbarClasses("navbarMenu", "navbarLogo");
-    }
-  } else if (site == "hittaHit.html#contactUs") {
+      if (scrollPosition < 650) {
+        window.history.replaceState('index.html#meny', 'Index', 'index.html');
+        replaceNavbarClasses("navbarMenu", "navbarLogo");
+      }
+
+  }else if (site == "hittaHit.html#contactUs") {
     if (scrollPosition > 500) {
       window.history.replaceState(
         "hittaHit.html#contactUs",
