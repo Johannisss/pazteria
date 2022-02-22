@@ -36,6 +36,7 @@ function changeBackgroundImage() {
  };
 
 // Lägg till den första bilden som kommer synas direkt när man kommer in på sidan
+
 document.getElementsByClassName('gallery')[0].style.backgroundImage = "url("+ images[currentImageIndex] +")";
 
 
@@ -48,7 +49,7 @@ function trackScrollPosition() {
   let site = window.location.href.split("/")[window.location.href.split("/").length - 1];
 
   if (site == "index.html") {
-    if (scrollPosition > 400) {
+    if (scrollPosition > 650) {
       window.history.replaceState('index.html', 'Index', 'index.html#meny');
       replaceNavbarClasses("navbarLogo", "navbarMenu");
     }
@@ -60,7 +61,7 @@ function trackScrollPosition() {
     }
 
   } else if (site == "index.html#meny") {
-      if (scrollPosition < 400) {
+      if (scrollPosition < 650) {
         window.history.replaceState('index.html#meny', 'Index', 'index.html');
         replaceNavbarClasses("navbarMenu", "navbarLogo");
       }
