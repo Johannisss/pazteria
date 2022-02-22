@@ -95,9 +95,6 @@ h2 {
 }
 
 /* hittaHit.html */
-p {
-  font-size: 18px;
-}
 
 .mapouter {
   position: relative;
@@ -144,6 +141,20 @@ h2 {
 
 .contactInfo {
   margin-bottom: 200px;
+}
+
+#contactInfo {
+  font-size: 18px;
+  list-style: none;
+  font-family: "Italiana", cursive;
+}
+
+#contactInfo li {
+  padding: 20px 0px;
+}
+
+#contactInfo a {
+  color: #0000EE ;
 }
 
 footer {
