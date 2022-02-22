@@ -56,7 +56,7 @@ nav {
 h1 {
   text-align: center;
   font-weight: bolder;
-  color: #ff0035;
+  color: black;
   padding: 50px 0px;
   font-size: 50px;
   font-family: "Italiana";
@@ -70,6 +70,8 @@ h2 {
 /*index.html*/
 #h1IndexHTML {
   z-index: 1;
+  background-color: rgba(171, 196, 189, 0.5);
+  border-radius: 30px;
 }
 
 /* omOss.html */
@@ -149,23 +151,23 @@ footer {
   display: flex;
   height: 250px;
   width: 100%;
-  background-color: #ff0035;
+  background-color: #f4dcd2;
   justify-content: space-evenly;
 }
 
 footer p {
   padding: 30px;
-  color: white;
+  color: black;
 }
 
 /* index.html */
 .banner-text {
-  color: #b5400f;
+  color: #73361C;
   margin: 50px 0;
 }
 
 .meny-text {
-  color: #24b410;
+  color: #385124;
   margin: 20px auto;
   font-size: 25px;
 }
@@ -188,14 +190,14 @@ footer p {
 }
 .pizza-container h3 {
   text-decoration: underline;
-  color: #24b410;
+  color: #385124;
 }
 .pasta-container ol li {
   font-size: 20px;
 }
 .pasta-container h3 {
   text-decoration: underline;
-  color: #b43610;
+  color: #385124;
 }
 #meny {
   background-color: #e5f0dc;
