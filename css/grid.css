@@ -80,7 +80,9 @@ h4 {
 .contactInfo {
   grid-column: 3/7;
 }
-
+#addressDescription {
+  grid-column: 3/7;
+}
 
 
 
