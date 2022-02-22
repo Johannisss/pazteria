@@ -157,6 +157,12 @@ h2 {
   color: #0000EE ;
 }
 
+h6 {
+  font-size: 24px;
+  padding: 30px;
+  letter-spacing: 2px;
+}
+
 footer {
   display: flex;
   height: 250px;
