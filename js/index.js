@@ -55,7 +55,7 @@ function trackScrollPosition() {
     }
 
   } else if (site == "hittaHit.html") {
-    if (scrollPosition > 500) {
+    if (scrollPosition > 650) {
       window.history.replaceState('hittaHit.html', 'Index', 'hittaHit.html#contactUs');
       replaceNavbarClasses("navbarFindUs", "navbarContactUs");
     }
@@ -67,7 +67,7 @@ function trackScrollPosition() {
       }
 
   }else if (site == "hittaHit.html#contactUs") {
-    if (scrollPosition > 500) {
+    if (scrollPosition > 650) {
       window.history.replaceState('hittaHit.html#contactUs', 'Index', 'hittaHit.html');
       replaceNavbarClasses("navbarContactUs", "navbarFindUs");
     }
