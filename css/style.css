@@ -1,8 +1,8 @@
 /*Länk till font Italiana:*/
-@import url('https://fonts.googleapis.com/css?family=Italiana');
+@import url("https://fonts.googleapis.com/css?family=Italiana");
 
 body {
-  font-family: 'Italiana'
+  font-family: "Italiana";
 }
 
 * {
@@ -25,7 +25,7 @@ li > a {
 nav {
   background-color: #f1f1f1;
 
-  font-family: 'Italiana';
+  font-family: "Italiana";
   line-height: 50px;
   text-align: center;
   position: fixed;
@@ -47,20 +47,19 @@ nav {
   justify-content: center;
   align-items: center;
   display: flex;
-
 }
 
 .transparent {
-  opacity:0;
+  opacity: 0;
 }
 
 h1 {
   text-align: center;
   font-weight: bolder;
-  color: #FF0035;
+  color: #ff0035;
   padding: 50px 0px;
   font-size: 50px;
-  font-family: 'Italiana';
+  font-family: "Italiana";
 }
 
 h2 {
@@ -68,17 +67,15 @@ h2 {
   font-weight: bolder;
 }
 
-
 /*index.html*/
 #h1IndexHTML {
   z-index: 1;
 }
 
-
 /* omOss.html */
 #ourHistoryContainer {
-  color: #FF0035;
-  background-color: rgba(171, 196, 189, 0.50);
+  color: #ff0035;
+  background-color: rgba(171, 196, 189, 0.5);
   margin: 50px 0px;
 }
 
@@ -90,7 +87,7 @@ h2 {
 #ourHistoryContainer p {
   color: black;
   font-size: 18px;
-  font-family: 'Italiana';
+  font-family: "Italiana";
   font-weight: bold;
   padding: 25px;
 }
@@ -112,13 +109,12 @@ p {
   overflow: hidden;
   background: none !important;
   height: 500px;
-  width:700px;
+  width: 700px;
 }
 
 #addressDescription {
   text-align: center;
   grid-column: 3/7;
-
 }
 
 #gmap_canvas {
@@ -162,21 +158,16 @@ footer p {
   color: white;
 }
 
-
-
-
-
 /* index.html */
 .banner-text {
-  color: #B5400F;
+  color: #b5400f;
   margin: 50px 0;
 }
 
 .meny-text {
-  color: #24B410;
+  color: #24b410;
   margin: 20px auto;
   font-size: 25px;
-
 }
 
 #navbarLogo img {
@@ -189,27 +180,26 @@ footer p {
 }
 
 .banner {
-  background-color: #F4DCD2;
+  background-color: #f4dcd2;
 }
-
 
 .pizza-container ol li {
   font-size: 20px;
 }
 .pizza-container h3 {
   text-decoration: underline;
-  color: #24B410;
+  color: #24b410;
 }
 .pasta-container ol li {
   font-size: 20px;
 }
 .pasta-container h3 {
   text-decoration: underline;
-  color: #B43610;
+  color: #b43610;
 }
 #meny {
-  background-color: #E5F0DC;
-  padding-bottom: 500px;
+  background-color: #e5f0dc;
+  padding-bottom: 200px;
 }
 
 .menu {
@@ -257,15 +247,10 @@ footer p {
   transition: 0.3s;
 }
 
-
-
-
-
-
 /* omOss.html */
 #ourHistoryContainer {
-  color: #FF0035;
-  background-color: rgba(171, 196, 189, 0.50);
+  color: #ff0035;
+  background-color: rgba(171, 196, 189, 0.5);
   margin: 50px 0px;
 }
 
@@ -277,15 +262,10 @@ footer p {
 #ourHistoryContainer p {
   color: black;
   font-size: 18px;
-  font-family: 'Italiana';
+  font-family: "Italiana";
   font-weight: bold;
   padding: 25px;
 }
-
-
-
-
-
 
 @media (max-width: 500px) {
   .menu {
@@ -299,7 +279,6 @@ footer p {
   }
 }
 .easter-egg1 {
-
   height: 100px;
   width: 100px;
   background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Flistn.to%2Fplaylist%2Famong-us-drip&psig=AOvVaw14CyK0UTR1oUSC_1NE-6fR&ust=1645004170822000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKCzop20gfYCFQAAAAAdAAAAABAD");
