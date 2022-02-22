@@ -276,6 +276,11 @@ footer p {
   nav ul li:not(:last-child):not(:first-child) {
     display: none;
   }
+  .mapouter {
+    width: 350px;
+    height: 400px;
+  }
+
 }
 .easter-egg1 {
   height: 100px;
