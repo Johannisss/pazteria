@@ -282,7 +282,14 @@ footer p {
     width: 350px;
     height: 400px;
   }
-
+  .gmap_canvas {
+    height: 350px;
+    width: 400px;
+  }
+  #gmap_canvas {
+    height: 350px;
+    width: 400px;
+  }
 }
 .easter-egg1 {
   height: 100px;
