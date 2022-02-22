@@ -51,18 +51,25 @@ function trackScrollPosition() {
     }
   } else if (site == "hittaHit.html") {
     if (scrollPosition > 650) {
-      window.history.replaceState('hittaHit.html', 'Index', 'hittaHit.html#contactUs');
+      window.history.replaceState(
+        "hittaHit.html",
+        "Index",
+        "hittaHit.html#contactUs"
+      );
       replaceNavbarClasses("navbarFindUs", "navbarContactUs");
     }
   } else if (site == "index.html#meny") {
-      if (scrollPosition < 650) {
-        window.history.replaceState('index.html#meny', 'Index', 'index.html');
-        replaceNavbarClasses("navbarMenu", "navbarLogo");
-      }
-
-  }else if (site == "hittaHit.html#contactUs") {
-    if (scrollPosition > 650) {
-      window.history.replaceState('hittaHit.html#contactUs', 'Index', 'hittaHit.html');
+    if (scrollPosition < 650) {
+      window.history.replaceState("index.html#meny", "Index", "index.html");
+      replaceNavbarClasses("navbarMenu", "navbarLogo");
+    }
+  } else if (site == "hittaHit.html#contactUs") {
+    if (scrollPosition < 650) {
+      window.history.replaceState(
+        "hittaHit.html#contactUs",
+        "Index",
+        "hittaHit.html"
+      );
       replaceNavbarClasses("navbarContactUs", "navbarFindUs");
     }
   }
