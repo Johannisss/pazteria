@@ -1,0 +1,306 @@
+/*Länk till font Italiana:*/
+@import url('https://fonts.googleapis.com/css?family=Italiana');
+
+body {
+  font-family: 'Italiana'
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.active {
+  background-color: rgba(8, 154, 58, 0.88);
+}
+
+li {
+  color: black;
+}
+
+li > a {
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #f1f1f1;
+
+  font-family: 'Italiana';
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+}
+
+.navbar-grid li > a {
+  color: black;
+  text-decoration: none;
+}
+
+.gallery {
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 1s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.transparent {
+  opacity:0;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bolder;
+  color: #FF0035;
+  padding: 50px 0px;
+  font-size: 50px;
+  font-family: 'Italiana';
+}
+
+h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+/*index.html*/
+#h1IndexHTML {
+  z-index: 1;
+}
+
+
+/* omOss.html */
+#ourHistoryContainer {
+  color: #FF0035;
+  background-color: rgba(171, 196, 189, 0.50);
+  margin: 50px 0px;
+}
+
+#history {
+  padding: 30px 0px;
+  text-align: center;
+}
+
+#ourHistoryContainer p {
+  color: black;
+  font-size: 18px;
+  font-family: 'Italiana';
+  font-weight: bold;
+  padding: 25px;
+}
+
+/* hittaHit.html */
+p {
+  font-size: 18px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 700px;
+  margin: auto;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width:700px;
+}
+
+#addressDescription {
+  text-align: center;
+  grid-column: 3/7;
+
+}
+
+#gmap_canvas {
+  height: 500px;
+  width: 700px;
+  border: none;
+  overflow: hidden;
+  margin: 0px;
+}
+
+h3 {
+  padding: 30px 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#pathDescription {
+  grid-column: 3/7;
+}
+
+h2 {
+  padding: 40px 0px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.contactInfo {
+  margin-bottom: 200px;
+}
+
+footer {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  background-color: #ff0035;
+  justify-content: space-evenly;
+}
+
+footer p {
+  padding: 30px;
+  color: white;
+}
+
+
+
+
+
+/* index.html */
+.banner-text {
+  color: #B5400F;
+  margin: 50px 0;
+}
+
+.meny-text {
+  color: #24B410;
+  margin: 20px auto;
+  font-size: 25px;
+
+}
+
+#navbarLogo img {
+  height: 50px;
+  width: 70px;
+}
+
+#navbarLogo {
+  height: 50px;
+}
+
+.banner {
+  background-color: #F4DCD2;
+}
+
+
+.pizza-container ol li {
+  font-size: 20px;
+}
+.pizza-container h3 {
+  text-decoration: underline;
+  color: #24B410;
+}
+.pasta-container ol li {
+  font-size: 20px;
+}
+.pasta-container h3 {
+  text-decoration: underline;
+  color: #B43610;
+}
+#meny {
+  background-color: #E5F0DC;
+  padding-bottom: 500px;
+}
+
+.menu {
+  visibility: hidden;
+  font-size: 30px;
+  margin-left: 50%;
+}
+.mobil-meny {
+  visibility: hidden;
+  color: white;
+  font-size: 30px;
+  margin-right: 15px;
+}
+.close {
+  color: white;
+  margin: 20px;
+  font-size: 30px;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 10;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+/* omOss.html */
+#ourHistoryContainer {
+  color: #FF0035;
+  background-color: rgba(171, 196, 189, 0.50);
+  margin: 50px 0px;
+}
+
+#history {
+  padding: 30px 0px;
+  text-align: center;
+}
+
+#ourHistoryContainer p {
+  color: black;
+  font-size: 18px;
+  font-family: 'Italiana';
+  font-weight: bold;
+  padding: 25px;
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+  .menu {
+    visibility: visible;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  nav ul li:not(:last-child):not(:first-child) {
+    display: none;
+  }
+}
+.easter-egg1 {
+
+  height: 100px;
+  width: 100px;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Flistn.to%2Fplaylist%2Famong-us-drip&psig=AOvVaw14CyK0UTR1oUSC_1NE-6fR&ust=1645004170822000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKCzop20gfYCFQAAAAAdAAAAABAD");
+}

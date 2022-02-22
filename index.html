@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pazteria | Pizza och Pasta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar-grid">
+        <li id="navbarLogo" class="active">
+          <a href="index.html">
+            <img src="https://img.myloview.se/affischer/pizza-girl-presentera-400-6996776.jpg" alt="Väldigt snygg logga absolut inte stulen">
+          </a>
+        </li>
+        <li id="navbarMenu">
+          <a href="index.html#meny" onclick="replaceNavbarClasses('navbarLogo', 'navbarMenu')">Meny</a>
+        </li>
+        <li id="navbarAboutUs">
+          <a href="omOss.html">Om Oss</a>
+        </li>
+        <li id="navbarFindUs">
+          <a href="hittaHit.html">Hitta Hit</a>
+        </li>
+        <li id="navbarContactUs">
+          <a href="hittaHit.html#contactUs" onclick="replaceNavbarClasses('navbarFindUs', 'navbarContactUs')">Kontakta Oss</a>
+        </li>
+        <li class="material-icons menu" onclick="openMeny()"> menu </li>
+      </ul>
+      <!--Klassen active indikerar var användaren befinner sig-->
+    </nav>
+
+    <div id="mobil-meny" class="overlay">
+      <span class="material-icons close" onclick="closeMeny()"> close </span>
+      <div class="overlay-content">
+        <a href="index.html">Hem</a>
+        <a href="index.html#meny">Meny</a>
+        <a href="omOss.html">Om oss</a>
+        <a href="hittaHit.html">Hitta hit</a>
+        <a href="hittaHit.html#contactUs">Kontakta Oss</a>
+        <div class="easter-egg1"></div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <h1 id="h1IndexHTML">Välkommen till Pazteria</h1>
+    </div>
+
+    <div class="container banner">
+      <h2 class="banner-text">"Världens godaste pizza och pasta" - Joe biden</h2>
+    </div>
+    <div id="meny" class="container">
+      <div class="meny-text">
+        <h2 class="">Meny</h2>
+      </div>
+      <div class="pizza-container">
+        <h3>Pizza:</h3>
+        <ol>
+          <li>Margerita</li>
+          <li>Vesuvio</li>
+          <li>Hawaii</li>
+          <li>Capricciosa</li>
+        </ol>
+      </div>
+      <div class="pasta-container">
+        <h3>Pasta:</h3>
+        <ol>
+          <li>Bolognese</li>
+          <li>Carbonara</li>
+          <li>Lasagne</li>
+          <li>Balastation fayyv</li>
+        </ol>
+      </div>
+    </div>
+
+    <footer>
+      <p>Kontaktuppgifter:<br>08-420 69 69<br><a href="mailto:customerSupport@pazteria.cum">customerSupport@pazteria.cum</a><br>Kemistvägen 1</p>
+      <p>Jobba hos oss:<br>Lediga tjänster<br>Skicka en ansäkan<br>Karriär och utbildning<br>Student och Prao</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
