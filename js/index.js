@@ -64,7 +64,7 @@ function trackScrollPosition() {
       replaceNavbarClasses("navbarMenu", "navbarLogo");
     }
   } else if (site == "hittaHit.html#contactUs") {
-    if (scrollPosition > 500) {
+    if (scrollPosition < 500) {
       window.history.replaceState(
         "hittaHit.html#contactUs",
         "Index",
