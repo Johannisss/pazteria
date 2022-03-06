@@ -30,7 +30,7 @@ function changeBackgroundImage() {
   setTimeout(() => {
     // Sätt bilden till en ny bild
     gallery.style.backgroundImage =
-      "url(../images/" + images[currentImageIndex] + ")";
+      "url(images/" + images[currentImageIndex] + ")";
 
     // Ta bort transparent klassen för att göra bilden synlig
     gallery.className = "gallery";
@@ -98,7 +98,7 @@ function closeMeny() {
 if (window.location.href.includes("index")) {
   // Lägg till den första bilden som kommer synas direkt när man kommer in på sidan
   document.getElementsByClassName("gallery")[0].style.backgroundImage =
-    "url(../images/" + images[currentImageIndex] + ")";
+    "url(images/" + images[currentImageIndex] + ")";
   // Byt bild varje 5 sekunder
   document.addEventListener("DOMContentLoaded", () => {
     setInterval(changeBackgroundImage, 5000);
