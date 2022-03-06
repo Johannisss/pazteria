@@ -15,12 +15,12 @@
 }
 .pizza-container {
   grid-row: 2/3;
-  grid-column: 1/6;
+  grid-column: 2/5;
   margin: 0 auto;
 }
 .pasta-container {
   grid-row: 2/3;
-  grid-column: 6/12;
+  grid-column: 5/8;
   margin: 0 auto;
 }
 

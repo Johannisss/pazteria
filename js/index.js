@@ -1,7 +1,8 @@
 // En lista med alla bilder som kommer att visas, bilder anges med en länk
 const images = [
-  "https://res.cloudinary.com/tf-lab/image/upload/w_600,h_337,c_fill,g_auto:subject,q_auto,f_auto/restaurant/00936bb8-2681-4f87-a51d-7914617f5695/b644e53d-806f-4fcb-b62b-93cdd47bdb4a.jpg",
-  "https://www.mitti.se/_internal/cimg!0/my2leh20xtuvi5gmm7d9gnzzesylf5k.jpeg",
+  "pizzorBildspel1.webp",
+  "pizzorBildspel2.webp",
+  "pizzorBildspel3.webp",
 ];
 
 const texts = [""];
@@ -28,7 +29,8 @@ function changeBackgroundImage() {
   // Vänta 1 sek för att låta övergången köras
   setTimeout(() => {
     // Sätt bilden till en ny bild
-    gallery.style.backgroundImage = "url(" + images[currentImageIndex] + ")";
+    gallery.style.backgroundImage =
+      "url(/images/" + images[currentImageIndex] + ")";
 
     // Ta bort transparent klassen för att göra bilden synlig
     gallery.className = "gallery";
@@ -96,7 +98,7 @@ function closeMeny() {
 if (window.location.href.includes("index")) {
   // Lägg till den första bilden som kommer synas direkt när man kommer in på sidan
   document.getElementsByClassName("gallery")[0].style.backgroundImage =
-    "url(" + images[currentImageIndex] + ")";
+    "url(/images/" + images[currentImageIndex] + ")";
   // Byt bild varje 5 sekunder
   document.addEventListener("DOMContentLoaded", () => {
     setInterval(changeBackgroundImage, 5000);
